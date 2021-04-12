@@ -1,6 +1,5 @@
-import { LeafletMouseEvent } from 'leaflet';
 import React, { useEffect, useState } from 'react';
-import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
+import { Map, Marker, Popup, TileLayer } from 'react-leaflet';
 import './home.css';
 
 const Home = () => {
@@ -26,8 +25,8 @@ const Home = () => {
     }
 
     function selectMapPoint(event: any) {
-        let lat = event.latlng ? event.latlng.lat : event.target.id === "latitude" ? Number(event.target.value) : initialPosition[0];
-        let lng = event.latlng ? event.latlng.lng : event.target.id === "longitude" ? Number(event.target.value) : initialPosition[1];
+        const lat = event.latlng ? event.latlng.lat : event.target.id === "latitude" ? Number(event.target.value) : initialPosition[0];
+        const lng = event.latlng ? event.latlng.lng : event.target.id === "longitude" ? Number(event.target.value) : initialPosition[1];
         setSelectedPosition([
             lat,
             lng
