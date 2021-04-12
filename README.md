@@ -16,7 +16,6 @@ O objetivo desta aplicação é mostrar um mapa do Google Maps, com a possibilid
 - react: 17.0.2
 - node: 14.16.1
 - leaflet: 1.7.1
-- react-leaflet: 3.1.0
 
 ## Como instalar
 
